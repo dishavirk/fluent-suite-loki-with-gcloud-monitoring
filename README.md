@@ -1,1 +1,1 @@
-# fluent-suite-loki-with-gcloud-monitoring-
+# fluent-suite-loki-with-gcloud-monitoring
