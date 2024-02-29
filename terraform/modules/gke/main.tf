@@ -13,7 +13,8 @@ resource "google_container_cluster" "cluster" {
 
   remove_default_node_pool = true
   initial_node_count       = 1
-
+  
+  logging_service = "none"
   master_auth {
     client_certificate_config {
       issue_client_certificate = false
@@ -33,6 +34,8 @@ resource "google_container_node_pool" "primary" {
     machine_type = var.machine_type
     disk_size_gb = 50
     disk_type    = "pd-standard"
+
+    service_account = var.custom_service_account_email
 
     oauth_scopes = [
       "https://www.googleapis.com/auth/devstorage.read_only",

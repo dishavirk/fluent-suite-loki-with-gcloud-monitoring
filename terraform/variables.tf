@@ -85,3 +85,7 @@ variable "zone" {
   description = "The zone where the GKE cluster will be created."
   type        = string
 }
+variable "custom_service_account_email" {
+  description = "The custom email of the service account for the node pool"
+  type        = string
+}

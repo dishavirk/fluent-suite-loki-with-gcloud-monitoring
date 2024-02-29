@@ -19,4 +19,5 @@ auto_repair       = true
 auto_upgrade      = true
 pods_range_name   = "my-pods-range"
 services_range_name = "my-services-range"
-node_tags         = ["gke-node", "http-server", "https-server"]  # Adjust based on your requirements
+node_tags         = ["gke-node", "http-server", "https-server"]  
+custom_service_account_email = "my-custom-logging-sa@golang-logging-demo.iam.gserviceaccount.com"

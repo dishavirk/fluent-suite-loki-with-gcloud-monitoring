@@ -18,4 +18,5 @@ module "gke" {
   subnetwork  = module.networking.subnet_name
   pods_range_name = var.pods_range_name
   services_range_name = var.services_range_name
+  custom_service_account_email = var.custom_service_account_email
 }
